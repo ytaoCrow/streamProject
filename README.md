@@ -1,18 +1,24 @@
-## 請用外部連結導入 H2 DB
+# HW 0823 part4實作
 
-* 導入可參考[這篇文章](https://stackoverflow.com/questions/43256295/how-to-access-in-memory-h2-database-of-one-spring-boot-application-from-another/43276769#43276769)
+* 取得一個 list 只有 name，且不重複並排序的資料
+    * [Bill, Brian, KZ]
+    * API : http://localhost:8080/stream/users
+  
+* 取得一個 map，其 key 為 ID；value 為 name
+    * 1. “Bill”
+    * 2. “Brian”
+    * API : http://localhost:8080/stream/users/valueAndName
+    
+* 取得第一筆 name = KZ 的資料
+    * API : http://localhost:8080/stream/users/name 
+    
+* 將資料先依據 age 排序，再依據 ID 排序
+    * API : http://localhost:8080/stream/users/ageId 
+    
+* 取得一個 string 為所有資料的 name, age|name, age
+    * Bill, 13|KZ, 23
+    * API : http://localhost:8080/stream/users/allName
 
-1. 
-![](https://i.imgur.com/AaCNN9U.png)
-
-2. 設定 URL 為: 
-```
-jdbc:h2:tcp://localhost:9092/mem:training
-
-帳號：sa
-密碼：123
-```
-![](https://i.imgur.com/Nl187WD.png)
-
-
-3. 如果要跳過設定，將 ZIP 拉到桌面，直接解壓縮 ZIP 檔，拉進 IntelliJ IDEA，這樣啟動專案 H2 DB 不用重新連線！
+* 參考資料：
+    *  https://howtodoinjava.com/java8/java-stream-distinct-examples/
+    *  https://youtu.be/FWoYpM-E3EQ
