@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "091cbb11-cd90-46fe-916d-9927f5bd5929",
+		"name": "StearmProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20536446"
+	},
+	"item": [
+		{
+			"name": "getUsersDisplayName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"wow\",\r\n    \"age\":18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/stream/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stream",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getValueAndName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/stream/users/valueAndName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stream",
+						"users",
+						"valueAndName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFisrtNamebyKZ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/stream/users/name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stream",
+						"users",
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAgeId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/stream/users/ageId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stream",
+						"users",
+						"ageId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUsersByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
